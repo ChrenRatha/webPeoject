@@ -11,6 +11,6 @@ import { CartService } from '../service/cart-service';
 })
 export class Navbar {
   constructor(public cartService: CartService) {
-
+      
   }
 }

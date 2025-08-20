@@ -11,7 +11,7 @@
       <div class="cart">
         <a href="#" routerLink="/cart">
           <i class="fa-solid fa-cart-shopping"></i>
-          <span class="cart-count">3</span>
+          <span class="cart-count">{{ cartService.GetCartItems().length }}</span>
         </a>
       </div>
     </div>
