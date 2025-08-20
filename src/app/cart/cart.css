@@ -1,0 +1,163 @@
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  background: #0b0f14;
+  color: #eaf0f7;
+  border-radius: 16px;
+  padding: 30px;
+}
+
+/* Cart title */
+h2 {
+  font-weight: 700;
+  color: #4f8cff;
+  margin-bottom: 30px;
+}
+
+/* Cart Card */
+.cart-card {
+  background: #121821;
+  border: 1px solid #1f2a3a;
+  border-radius: 16px;
+  margin-bottom: 18px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.cart-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.cart-img {
+  max-width: 80px;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+/* Quantity Controls */
+.qty {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.qty button {
+  background: #1f2a3a;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.qty button:hover {
+  background: #4f8cff;
+}
+
+/* Remove Button */
+.remove-btn {
+  color: #ff6b6b;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.remove-btn:hover {
+  color: #ff4a4a;
+}
+
+/* Total Summary */
+.total-box {
+  background: #121821;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 20px;
+  display: inline-block;
+}
+.total-box span {
+  font-weight: 700;
+  color: #4f8cff;
+}
+.total-box.text-right {
+  display: block;
+  text-align: right;
+}
+.total-box + button {
+  background: linear-gradient(180deg, #4f8cff, #3f79ea);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin-top: 12px;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  float: right;
+  box-shadow: 0 8px 20px rgba(79,140,255,0.3);
+  transition: transform 0.2s ease;
+}
+.total-box + button:hover {
+  transform: translateY(-2px);
+}
+
+/* Invoice Popup */
+.invoice-popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+.invoice-popup.show {
+  display: flex;
+}
+.invoice-content {
+  background: #121821;
+  border-radius: 16px;
+  padding: 30px;
+  width: 90%;
+  max-width: 600px;
+  color: #eaf0f7;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  animation: popupShow 0.3s ease;
+}
+.invoice-content h2 {
+  margin-bottom: 20px;
+  color: #4f8cff;
+}
+.invoice-item {
+  display: flex;
+  justify-content: space-between;
+  background: #1f2a3a;
+  padding: 10px 14px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.invoice-content h3 {
+  margin-top: 20px;
+  font-weight: 700;
+  text-align: right;
+}
+.invoice-content button {
+  background: #4f8cff;
+  border: none;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  margin: 10px 6px 0 0;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.invoice-content button:hover {
+  background: #3f79ea;
+}
+
+@keyframes popupShow {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

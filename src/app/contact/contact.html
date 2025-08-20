@@ -1,0 +1,75 @@
+<main class="contact-page">
+    <section class="contact-hero">
+      <h1>Contact Us</h1>
+      <p>Questions, feedback, or a friendly hello—drop us a line! We usually reply within 1 business day.</p>
+    </section>
+
+    <section class="contact-wrap">
+      <!-- Left: Form -->
+      <form class="contact-form" action="#" method="post" novalidate>
+        <div class="form-row">
+          <div class="input-group">
+            <label for="name">Full Name <span aria-hidden="true">*</span></label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+            <small class="hint">Please enter your full name.</small>
+          </div>
+          <div class="input-group">
+            <label for="email">Email <span aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            <small class="hint">We’ll only use this to reply.</small>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="input-group">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" placeholder="+855 12 345 678" pattern="^[0-9+()\-.\s]{6,}$" />
+            <small class="hint">Optional.</small>
+          </div>
+          <div class="input-group">
+            <label for="subject">Subject <span aria-hidden="true">*</span></label>
+            <input id="subject" name="subject" type="text" placeholder="How can we help?" required />
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="message">Message <span aria-hidden="true">*</span></label>
+          <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+        </div>
+
+        <div class="form-footer">
+          <label class="checkbox">
+            <input type="checkbox" name="consent" required />
+            <span>I agree to the processing of my information.</span>
+          </label>
+          <button class="btn" type="submit">Send Message</button>
+        </div>
+        <p class="disclaimer">By submitting this form you agree to our terms and privacy policy.</p>
+      </form>
+
+      <!-- Right: Info -->
+      <aside class="contact-info">
+        <div class="info-card">
+          <h3>Visit Us</h3>
+          <p>123 Riverside Blvd,<br> Phnom Penh, Cambodia</p>
+        </div>
+        <div class="info-card">
+          <h3>Email</h3>
+          <p><a href="mailto:hello@example.com">hello@example.com</a></p>
+        </div>
+        <div class="info-card">
+          <h3>Phone</h3>
+          <p><a href="tel:+85512345678">+855 12 345 678</a></p>
+        </div>
+        <div class="map">
+          <!-- Replace src with your real map embed if you want -->
+          <iframe
+            title="Map"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=104.9%2C11.5%2C105.1%2C11.7&layer=mapnik"
+          ></iframe>
+        </div>
+      </aside>
+    </section>
+  </main>
